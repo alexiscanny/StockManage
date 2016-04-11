@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<EditText
+android:id="@+id/editText1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" >
+
+<requestFocus />
+</EditText>
+
+<Button
+android:id="@+id/button1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ping" />
+
+<TextView
+android:id="@+id/textView1"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:text=" " />
+
+</LinearLayout>
+    -->
+<!-- 
+<EditText
+        android:id="@+id/ins_ip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:layout_x="4dp"
+        android:layout_y="134dp"
+        android:ems="10"
+        android:text="@string/ins_ip_text" />
+    -->
+
+    <TextView
+        android:id="@+id/response_pc_remot"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:layout_x="2dp"
+        android:layout_y="141dp"
+        android:text=" " />
+
+    <EditText
+        android:id="@+id/ind_pc_remot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="20dp"
+        android:ems="10"
+        android:text="inserisci l'indirizzo" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/ping_button"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_x="41dp"
+        android:layout_y="64dp"
+        android:text="Ping" />
+
+</AbsoluteLayout>

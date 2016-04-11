@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tsa"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <!-- mettiamo l'uses permission così lasciamo decidere all'utente se far collegare la app a internet oppure no, infatti ci sono anche 
+    "android.permission.CAMERA" per accedere alla fotocamera oppure "android.permission.READ_CONTACTS" per accedere ai contatti -->
+    <uses-permission 
+        android:name="android.permission.INTERNET"> </uses-permission>
+	<uses-permission 
+	    android:name="android.permission.ACCESS_NETWORK_STATE"> </uses-permission>
+    <uses-permission 
+        android:name="android.permission.READ_PHONE_STATE"> </uses-permission>
+    <uses-permission 
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"> </uses-permission>
+    <uses-permission 
+        android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission 
+	    android:name="android.permission.WAKE_LOCK"></uses-permission>
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.tsa.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.example.tsa.Login" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name="android.intent.action.LOGIN" />
+       		    <category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>
+       	</activity>
+       	<activity 
+            android:name="com.example.tsa.Verifica" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name=".VERIFICA" />
+       		    <category android:name="android.intent.category.DEFAULT" />      		    
+       		</intent-filter>
+       	</activity>
+       	<activity 
+            android:name="com.example.tsa.Registrati" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name="android.intent.action.REGISTRATI" />
+       		    <category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>
+       	</activity>
+       	<activity 
+            android:name="com.example.tsa.InserimentoIp" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name=".INSERIMENTOIP" />
+       		    <category android:name="android.intent.category.DEFAULT" />      		    
+       		</intent-filter>
+       	</activity>
+       		<activity 
+            android:name="com.example.tsa.AndroidPhp" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name=".ANDROIDPHP" />
+       		    <category android:name="android.intent.category.DEFAULT" />      		    
+       		</intent-filter>
+       	</activity>
+       		<activity 
+            android:name="com.example.tsa.Stockwatcher" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name=".STOCKWATCHER" />
+       		    <category android:name="android.intent.category.DEFAULT" />      		    
+       		</intent-filter>
+       	</activity>
+       	<activity 
+            android:name="com.example.tsa.Stockwatch" 
+       		android:label="@string/app_name">
+       		<intent-filter>
+       		    <action android:name=".STOCKWATCH" />
+       		    <category android:name="android.intent.category.DEFAULT" />      		    
+       		</intent-filter>
+       	</activity>
+       	<activity android:name=".StockViewActivity">
+        </activity>
+        
+        <service android:name=".StockDataService">
+		</service>
+		
+		<activity android:name="StockPricePreferences" android:label="@string/preferences_name"></activity>
+    </application>
+</manifest>

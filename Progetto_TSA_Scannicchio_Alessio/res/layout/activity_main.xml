@@ -1,0 +1,46 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="158dp"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="318dp"
+        android:layout_y="456dp" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registrati"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="-2dp"
+        android:layout_y="116dp"
+        android:text="@string/registrati" />
+
+   <!--  <Button
+        android:id="@+id/riceviphpbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-2dp"
+        android:layout_y="234dp"
+        android:text="@string/ricevi_php" />
+
+    <Button
+        android:id="@+id/stockwatch_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="345dp"
+        android:text="@string/stockwatch" />
+ -->
+</AbsoluteLayout>

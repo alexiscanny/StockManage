@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2013 Alessio Scannicchio (alessio.scannicchio@gmail.com).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/stocks_view_root"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_gravity="center">
+      <TableLayout
+      android:id="@+id/stock_view_table"
+      android:layout_height="wrap_content"
+      android:stretchColumns="1,5"
+      android:layout_width="fill_parent">
+
+      <!--  Layout the present value in the first line. -->
+      <TableRow>
+        <TextView
+          android:id="@+id/name_label"
+          android:layout_span="5"
+          android:text="@string/stock_name" />
+      </TableRow>
+      <TableRow
+        android:background="@color/stock_label_background">
+        <TextView
+          android:gravity="right"
+          android:id="@+id/stock_label_register"
+          android:layout_column="1"
+          android:layout_marginBottom="-13dip"
+          android:layout_marginTop="-13dip"
+          android:layout_span="4"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="45sp" />
+      </TableRow>
+
+      <!-- Value and Difference -->
+      <TableRow
+        android:padding="1dip">
+        <TextView
+          android:id="@+id/value_label"
+          android:layout_column="1"
+          android:layout_span="3"
+          android:text="@string/value_label" />
+        <TextView
+          android:id="@+id/difference_label"
+          android:layout_column="4"
+          android:layout_span="2"
+          android:text="@string/difference_label" />
+      </TableRow>
+      <TableRow
+        android:background="@color/stock_label_background">
+        <TextView
+          android:gravity="right"
+          android:id="@+id/value_register"
+          android:layout_column="1"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="40sp" />
+        <TextView
+          android:background="@color/black"
+          android:layout_column="3"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:layout_width="5dip"
+          android:textSize="40sp" />
+        <TextView
+          android:gravity="right"
+          android:id="@+id/difference_register"
+          android:layout_column="4"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="40sp" />
+      </TableRow>
+      
+      <!-- Maximum and Minimum value -->
+      <TableRow
+        android:padding="1dip">
+        <TextView
+          android:id="@+id/value_label"
+          android:layout_column="1"
+          android:layout_span="3"
+          android:text="@string/maximum_value_label" />
+        <TextView
+          android:id="@+id/difference_label"
+          android:layout_column="4"
+          android:layout_span="2"
+          android:text="@string/minimum_value_label" />
+      </TableRow>
+      <TableRow
+        android:background="@color/stock_label_background">
+        <TextView
+          android:gravity="right"
+          android:id="@+id/maximum_value_register"
+          android:layout_column="1"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="40sp" />
+        <TextView
+          android:background="@color/black"
+          android:layout_column="3"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:layout_width="5dip"
+          android:textSize="40sp" />
+        <TextView
+          android:gravity="right"
+          android:id="@+id/minimum_value_register"
+          android:layout_column="4"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="40sp" />
+      </TableRow>
+    </TableLayout>
+      <TableLayout
+      android:id="@+id/stock_chart_table"
+      android:layout_height="fill_parent"
+      android:layout_marginTop="200dip"
+      android:stretchColumns="1"
+      android:layout_width="fill_parent">
+      <TableRow
+        android:padding="3dip"
+        android:background="@color/white"
+        android:gravity="center">
+
+          <Spinner
+              android:id="@+id/SpinnerTime"
+              android:layout_width="100dip"
+              android:layout_height="40dip"
+              android:layout_alignParentTop="true" /> 
+
+      </TableRow>
+      <TableRow
+        android:padding="3dip"
+        android:background="@color/black"
+        android:gravity="center">
+         <LinearLayout android:orientation="horizontal"
+          android:layout_width="fill_parent" android:layout_height="fill_parent">
+           <ImageView android:id="@+id/ImageView01"
+             android:layout_height="fill_parent" android:layout_width="fill_parent"
+             android:layout_gravity="center" android:scaleType="center" />
+         </LinearLayout>
+     </TableRow>
+
+     <TextView
+         android:gravity="right"
+          android:id="@+id/symbol_register"
+          android:visibility="invisible"
+          android:layout_column="1"
+          android:layout_marginBottom="-9dip"
+          android:layout_marginTop="-9dip"
+          android:text="@string/unknown"
+          android:textColor="@color/stock_label_text"
+          android:textSize="40sp" />
+
+   </TableLayout>  
+</RelativeLayout>

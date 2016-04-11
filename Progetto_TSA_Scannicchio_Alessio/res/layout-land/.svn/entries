@@ -1,0 +1,52 @@
+8
+
+dir
+2
+http://android-stock-price-viewer.googlecode.com/svn/trunk/res/layout-land
+http://android-stock-price-viewer.googlecode.com/svn
+
+
+
+2010-06-27T07:10:42.849265Z
+2
+hykwok1
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+adc60466-b1ea-f730-2d99-b41cb8acd71a
+
+widget_main.xml
+file
+
+
+
+
+2010-10-30T09:38:28.000000Z
+a09b7f852568c90fa952d8f881a8d473
+2010-06-27T07:10:42.849265Z
+2
+hykwok1
+
+stocklistitem.xml
+file
+
+
+
+
+2010-10-30T09:38:28.000000Z
+9a0b611e93dd91885c0acd470923d1ad
+2010-06-27T07:10:42.849265Z
+2
+hykwok1
+

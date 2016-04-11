@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="225dp" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="226dp"
+        android:text="@string/azione_signin_registrazione" />
+
+    <TextView
+        android:id="@+id/login_status_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <!-- android:text="@string/login_progress_signing_in" -->
+
+
+    <!--
+         <LinearLayout 
+        style="@style/LoginFormContainer"
+        android:orientation="vertical" /> 
+    -->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="92dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" >
+
+        <!-- android:imeActionId="@id/login" -->
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="44dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="@string/promptmail"
+         />
+
+</AbsoluteLayout>

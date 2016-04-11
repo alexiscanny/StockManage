@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">TSA</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button">Button</string>
+    <string name="login">Log In</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="promptmail">Indirizzo mail</string>
+    <string name="azione_signin_registrazione">Entra</string>
+    <string name="idlogin">login</string>
+    <string name="php">http://server/fil.php</string>
+    <string name="uFlag">u</string>
+    <string name="pFlag">p</string>
+    <string name="success">success</string>
+    <string name="errPassword">errore password</string>
+    <string name="registrati">Registrati</string>
+    <string name="ideditTextServer">Collega Server</string>
+    <string name="ideditTextClient">Collega Client</string>
+    <string name="Procedi_Verifica_button">Verifica Database</string>
+    <string name="ins_Ip_button">Inserisci IP</string>
+    <string name="ins_ip_text">Inserisci Ip</string>
+    <string name="abilita_tasti">Abilita Tasti</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="ricevi_php">Ricevi Php</string>
+    <string name="ricevitesto">Ricevi Testo</string>
+    <string name="stockwatch">Stockwatch</string>
+    <string name="btnAdd">Add</string>
+    <string name="szLastUpdate">Last Update: </string>
+    <string name="Dialog_Delete_Symbol_OK">OK</string>
+    <string name="Dialog_Delete_Symbol_Cancel">Cancel</string>
+    <string name="Dialog_Delete_Symbol_Message">Delete this Symbol?</string>
+    <string name="Dialog_Progress_Title">Please wait...</string>
+    <string name="Dialog_Progress_Message">Try to get data from server.....</string>
+    <string name="Toast_Add_Symbol_Ok">New symbol added successfully</string>
+    <string name="Toast_Add_Symbol_Fail">Cannot get new symbol</string>
+    <string name="preferences_name">Preferences</string>
+    <string name="szMenu_About">About</string>
+    <string name="szInstructions">Insert Stock Symbol (GOOG, FTSEMIB.MI...)</string>
+	<string name="szMenu_Preference">Settings</string>
+	<string name="refreshMenu">Refresh</string>
+	<string name="widget_name">Stock Price Widget</string>
+	<string name="widget_no_data">No data will be displayed</string>
+	<string name="Toast_No_Update_Needed">No update needed</string>
+	<string name="Toast_Stocks_Updated">Data updated successfully</string>
+	<string name="Toast_Already_Exist">Stock already in the list</string>
+	
+	<string name="stock_name">Stock Name</string>
+	<string name="unknown">-</string>
+	<string name="value_label">Value</string>
+	<string name="difference_label">Difference</string>
+	<string name="maximum_value_label">Maximum</string>
+	<string name="minimum_value_label">Minimum</string>
+
+</resources>

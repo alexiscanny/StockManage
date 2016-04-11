@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|start"
+    android:orientation="vertical" >
+
+    <!-- se avessimo messo horizontal avremmo potuto affiancare gli oggetti -->
+ <!--     
+    <CheckBox
+        android:id="@+id/serverconnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Abilita"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Verifica Connessione server" />
+
+    <CheckBox
+        android:id="@+id/stateconnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serverconnection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Verifica stato " />
+ -->
+    
+    
+<!-- 
+    <Button
+        android:id="@+id/signout"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/proc_verif_button"
+        android:layout_marginTop="64dp"
+        android:text="@string/sign_out" />
+ -->
+
+    <Button
+        android:id="@+id/Abilita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        
+        android:text="@string/abilita_tasti" />
+
+    <Button
+        android:id="@+id/stockwatch_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+
+        android:text="@string/stockwatch" />
+
+    <Button
+        android:id="@+id/inserisci_ip_button"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stockwatch_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="46dp"
+        android:text="@string/ins_ip_text" />
+
+    <Button
+        android:id="@+id/riceviphpbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/ricevi_php" />
+
+</RelativeLayout>
